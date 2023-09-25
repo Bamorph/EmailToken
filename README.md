@@ -35,6 +35,8 @@ $logFilePath = "logfile.txt";
 $logMessage = "SERVER Information: " . var_export($_SERVER, true) . "\n";
 file_put_contents($logFilePath, $logMessage, FILE_APPEND);
 
+mail("email@myserver.com","email Trigger",$logMessage);
+
 
 // Image Code
 
